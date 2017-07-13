@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSE: Better Together</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./format.css">
+    <script type="text/javascript" src="./bootcamp.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <section class="main">
+        <h2>Building Our Futures Together</h2>
+        <hr>
+        <p id="message_board">
+          They may hold back formal education from us but they will never hold education from us.
+          One for the other, we shall educate ourselves and build the brightest futures for ourselves.
+        </p>
+        <div class="form-wrapper">
+          <form name="register" action="" method="post">
+            <input type="text" name="register_first_name" class="input_txt" placeholder="Firstname" tabindex="1" oninput="formHandler.setFirstname(this);">
+            <input type="text" name="register_last_name" class="input_txt" placeholder="Lastname" tabindex="2" oninput="formHandler.setLastname(this);">
+            <select name="register_level" tabindex="3" onchange="formHandler.setLevel(this);">
+              <option>Please select level</option>
+              <option value="1">100</option>
+              <option value="2">200</option>
+              <option value="3">300</option>
+              <option value="4">400</option>
+              <option value="5">500</option>
+            </select>
+            <select name="register_course" tabindex="4" onchange="formHandler.setCourse(this);">
+              <option>Please select a course</option>
+              <option value="and">Android</option>
+              <option value="dba">Database{MySQL}</option>
+              <option value="jav">Java</option>
+              <option value="php">PHP</option>
+              <option value="pyt">Python</option>
+              <option value="web">Web Design</option>
+            </select>
+            <input type="text" name="register_number" class="input_txt" placeholder="Phone Number" tabindex="5" oninput="formHandler.setPhoneNumber(this);">
+            <input type="button" name="register_submit" class="input_btn" value="Register" tabindex="6" onclick="formHandler.register();">
+          </form>
+        </div>
+      </section>
+      <section class="trouble">
+        <h1>Unable to display on large screens</h1>
+      </section>
+    </div>
+  </body>
+</html>
