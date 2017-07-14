@@ -113,10 +113,15 @@ var formHandler = {
 	displayMessage: function(message, type){
 		var board = document.getElementById(formHandler.messageBoardId);
 		board.innerHTML = message;
-		if(type != 1){
-			board.style.backgroundColor = "#F7B9B9";
-		}else{
-			board.style.backgroundColor = "#B7F7DD";
+		switch(type){
+			case 1:	// success
+				board.style.backgroundColor = "#B7F7DD";
+				break;
+			case 2: //	process
+				board.style.backgroundColor = "#59B2F2";
+				break;
+			default: //	error
+				board.style.backgroundColor = "#F7B9B9";
 		}
 	},
 	register: function(){
@@ -148,6 +153,8 @@ var formHandler = {
 						}else{
 							formHandler.displayMessage("Unable to register user.", 0);
 						}
+					}else{
+						formHandler.displayMessage("Registering user", 2);
 					}
 				};
 			}
@@ -155,11 +162,6 @@ var formHandler = {
 		}else{
 			//	if data is erroneous
 			formHandler.displayMessage("Please, check your data.",0);
-			console.log("Firstname = "+formHandler.firstname+"\n");
-			console.log("Lasstname = "+formHandler.lastname+"\n");
-			console.log("Level = "+formHandler.level+"\n");
-			console.log("Course = "+formHandler.course+"\n");
-			console.log("Phone = "+formHandler.phoneNumber+"\n");
 		}
 	}
 };
