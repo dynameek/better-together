@@ -3,8 +3,8 @@
   <head>
     <title>Better Future Together</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./format.css">
-    <script type="text/javascript" src="./bootcamp.js"></script>
+    <link rel="stylesheet" href="../format.css">
+    <script type="text/javascript" src="../bootcamp.js"></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -29,10 +29,12 @@
             </select>
             <select name="register_course" tabindex="4" onchange="formHandler.setCourse(this);">
               <option>Please select a course</option>
-              <option value="and">Android Dev</option>
-              <option value="nat">Native Apps</option>
+              <option value="and">Android</option>
+              <option value="har">Andruino</option>
+              <option value="nat">C#</option>
               <option value="php">PHP & MySQL</option>
               <option value="web">Web Design</option>
+              <option value="wor">WordPress</option>
             </select>
             <input type="text" name="register_number" class="input_txt" placeholder="Phone Number" tabindex="5" oninput="formHandler.setPhoneNumber(this);">
             <input type="button" name="register_submit" class="input_btn" value="Register" tabindex="6" onclick="formHandler.register();">
