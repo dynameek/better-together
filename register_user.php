@@ -14,10 +14,10 @@
 	 *	open file and write contents to it
 	*/
 	
-	$db_host = "";
-	$db_user = "";
-	$db_pass = "";
-	$db_name = "";
+	$db_host = "onathan.5gbfree.com";
+	$db_user = "nate";
+	$db_pass = "nathaneil.1995";
+	$db_name = "bootcamp";
 	
 	$db_handle = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 	if(!$db_handle){

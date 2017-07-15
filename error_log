@@ -1,0 +1,42 @@
+[13-Jul-2017 23:13:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'nathan'@'localhost' (using password: YES) in /home/onathan/public_html/better-together/create_db.php on line 6
+[13-Jul-2017 23:13:26 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home/onathan/public_html/better-together/create_db.php on line 37
+[14-Jul-2017 00:29:10 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:30:24 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:30:26 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:31:02 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:32:26 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:32:29 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 14
+[14-Jul-2017 00:33:05 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 15
+[14-Jul-2017 00:33:16 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 15
+[14-Jul-2017 00:35:01 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 15
+[14-Jul-2017 00:35:05 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/onathan/public_html/better-together/get_users.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/onathan/public_html/better-together/get_users.php on line 15
