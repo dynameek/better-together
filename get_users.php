@@ -9,7 +9,7 @@
 				font-weight: bold;
 			}
 			tr:nth-child(2n){
-				background: #777;
+				background: #ADABAB;
 			}
 		</style>
 		<!-- Code to get users -->
