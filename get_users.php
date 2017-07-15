@@ -4,6 +4,14 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	</head>
 	<body>
+		<style>
+			table:first-child{
+				font-weight: bold;
+			}
+			table:nth-child(odd){
+				background: #777;
+			}
+		</style>
 		<!-- Code to get users -->
 		<?php
 			#
