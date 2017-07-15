@@ -5,10 +5,10 @@
 	</head>
 	<body>
 		<style>
-			table:first-child{
+			tr:first-child{
 				font-weight: bold;
 			}
-			table:nth-child(odd){
+			tr:nth-child(2n){
 				background: #777;
 			}
 		</style>
