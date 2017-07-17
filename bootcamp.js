@@ -29,7 +29,7 @@ var formHandler = {
 	},
 	checkNumber: function(value, len){
 		var valueLength = value.length;
-		var pattern = /[^0-9]+/;
+		var pattern = /[^0-9 ]/;
 		var returnValue;
 		if((valueLength < len) || (pattern.test(value))){
 			returnValue = false;
@@ -47,7 +47,6 @@ var formHandler = {
 			element.style.borderColor = "#F99898";
 		}else{
 			formHandler.firstname = value;
-			formHandler.level = value;
 			element.style.borderColor = "#8DEFBE";
 		}
 	},
@@ -58,7 +57,6 @@ var formHandler = {
 			element.style.borderColor = "#F99898";
 		}else{
 			formHandler.lastname = value;
-			formHandler.level = value;
 			element.style.borderColor = "#8DEFBE";
 		}
 	},
@@ -161,7 +159,19 @@ var formHandler = {
 			
 		}else{
 			//	if data is erroneous
-			formHandler.displayMessage("Please, check your data.",0);
+			var message;
+			if(!formHandler.firstname){
+				message = "Check firstname. No spaces allowed.";
+			}else if(!formHandler.lastname){
+				message = "Check lastname. No spaces allowed.";
+			}else if(!formHandler.level){
+				message = "Select level";
+			}else if(!formHandler.course){
+				message = "Select course";
+			}else{
+				message = "Phone number must be 11 digits long";
+			}
+			formHandler.displayMessage(message,0);
 		}
 	}
 };
