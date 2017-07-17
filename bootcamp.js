@@ -145,11 +145,12 @@ var formHandler = {
 				AjaxObject.onreadystatechange = function(){
 					if(AjaxObject.readyState == 4){
 						//	on success, process returned result
-						if(AjaxObject.responseText){
+						var response = JSON.parse(AjaxObject.responseText);
+						if(response.isSucceed){
 							//	 if returned result us desired
-							formHandler.displayMessage("You have been registered.", 1);
+							formHandler.displayMessage(response.message, 1);
 						}else{
-							formHandler.displayMessage("Unable to register user.", 0);
+							formHandler.displayMessage(response.message, 0);
 						}
 					}else{
 						formHandler.displayMessage("Registering user", 2);

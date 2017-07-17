@@ -17,14 +17,14 @@
 	
 	$db_handle = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 	if(!$db_handle){
-		$returnValue = false;
+		$returnValue = '{"isSucceed": false, "message": "Internal Error"}';
 	}else{
 		$sql = "INSERT INTO students VALUES('".md5($phone_number)."','".$first_name."', '".$last_name."', ".$level.", '".$course."',".$phone_number.")";
 		$query = mysqli_query($db_handle, $sql);
 		if(!$query){
-			$returnValue = false;
+			$returnValue = '{"isSucceed": false, "message": "User already exists"}';
 		}else{
-			$returnValue = true;
+			$returnValue = '{"isSucceed": true, "message": "Registration Successful"}';
 		}
 	}
 	#close db
